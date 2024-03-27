@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Splas Screen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Logo Title Bar -->
+    <link rel="icon" href="Asset/img/Michie 3.jpg" type="image/x-icon">
+    <!-- Boostrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Blambangan</title>
+  </head>
+  <body>
+        <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top animate__animated animate__slideInDown">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Blambangan Digital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-1 ">
+          <a class="nav-link mx-1 " href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item mx-1 ">
+          <a class="nav-link mx-1" href="sejarah.html">Sejarah</a>
+        </li>
+        <li class="nav-item mx-1 ">
+          <a class="nav-link" href="lokasi.html">Lokasi</a>
+        </li>
+        <li class="nav-item mx-1 ">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </li>
+    </ul>
+
+    </div>
+  </div>
+</nav>
+    <header>
+      <div class="container active animate__animated animate__slideInUp" id="container">
+        <div class="form-container login">
+          <form name="pendaftaran-web-blambangan">
+            <div class="alert alert-succes alert-dismissible fade show alert-berhasil d-none" role="alert">
+              <strong>SELAMAT!</strong> Silahan Login Menggunakan akun Yang Telah Terdaftar
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show alert-gagal d-none" role="alert">
+              <strong>ERROR!!!</strong> Periksa Koneksi Internet
+              <button type="button" class="btn-close close-gagal" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>  
+            <div class="close-icon-right animate__animated animate__fadeIn d-none ">
+              <a href="homepage.html"><i class="bi bi-x-circle"></i></a>
+            </div>
+            <h1>Registrasi</h1>
+            <div class="social-icon">
+              <a href=""><i class="bi bi-google"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-github"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <span>Daftar Menggunakan Email dan Password</span>
+            <input type="text" placeholder="Nama" name="nama" class="input"/>
+            <input type="email" placeholder="Email" name="email" class="input"/>
+            <input type="password" placeholder="Password" class="password input" id="password" name="password"/>
+            <input type="password" placeholder="Konfirmasi Password" class="password input" id="repassword" name="repassword"/>
+            <button type="submit" class="btn-daftar">Daftar</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              <span role="status">Loading...</span>
+            </button>
+          </form>
+        </div>
+        <div class="form-container daftar">
+          <form>
+            <div class="close-icon-left animate__animated animate__fadeIn d-none ">
+              <a href="homepage.html"><i class="bi bi-x-circle"></i></a>
+            </div>
+            <h1>Login</h1>
+            <div class="social-icon">
+              <a href=""><i class="bi bi-google"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-github"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <span>Login Gunakan Email dan Password</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="">Forget Your Password ?</a>
+            <button>Login</button>
+          </form>
+        </div>
+        <div class="toggle-container active">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Yo Welkam Bek!</h1>
+              <p>Selamat Datang Kembali Kawan Udah Lama Nggak Mengunjungi Web Kami Lagi !</p>
+              <button class="hidden" id="login">Login</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+              <h1>Yo Hello Friends!</h1>
+              <p>Jangan Sampai Salah Daftar Akun Ya Sayang Entar Akun Orang Lain Di Pakai</p>
+              <button class="hidden" id="daftar">Daftar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyLbolsAgEKOArrp33FOKy_7y_oWv9x6gw5iErPbEeOyaaTWh01GmI0cMoFsEIU77-EkQ/exec'
+      const form = document.forms['pendaftaran-web-blambangan']
+      const btnKirim = document.querySelector('.btn-daftar')
+      const btnLoading = document.querySelector('.btn-loading')
+      const myalertBerhasil = document.querySelector('.alert-berhasil')
+      const myalertGagal = document.querySelector('.alert-gagal')
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        <!-- Ketika Tombol Dikirim -->
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            myalertBerhasil.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)
+          })
+          .catch(error => {
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            myalertGagal.classList.toggle('d-none');
+            form.reset();
+            console.error('Error!', error.message)
+        })
+      })
+    </script>
+  </body>
+</html>

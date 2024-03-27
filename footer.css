@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+footer {
+  background-color: #4f6f52;
+}
+
+.container-footer {
+  width: 100%;
+  padding: 70px 30px 20px;
+  height: 10px;
+}
+
+.icon-medsos {
+  display: flex;
+  justify-content: center;
+}
+.icon-medsos a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.icon-medsos a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0, 9;
+}
+
+.icon-medsos a:hover {
+  background-color: red;
+  transition: 0.5s;
+}
+
+.icon-medsos a:hover i {
+  color: aqua;
+  transition: 0.5s;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 2.5em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+
+.footer-copyright {
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-copyright p {
+  color: #fff;
+}
+
+.dibuat-oleh {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+  .footer-nav ul {
+    flex-direction: column;
+  }
+  .footer-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
