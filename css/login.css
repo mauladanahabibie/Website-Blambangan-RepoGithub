@@ -11,14 +11,17 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: url(Asset/img/Blambangan\ 6.jpg);
+  background: url("../Asset/img/Blambangan6.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   background-position: center;
   box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
-  height: 120vh;
+  /* height: 120vh; */
   scroll-behavior: smooth;
 }
 .navbar {
@@ -235,7 +238,7 @@ body {
   color: #000000;
 }
 .social-icon a:hover {
-  background-color: #d0e7d2;
+  background-color: #84df8b;
   opacity: 80%;
   transition: 0.3s;
 }
@@ -250,33 +253,46 @@ body {
   border-radius: 50%;
 }
 
-.alert-berhasil {
+.alert-berhasil, .alert-gagal {
   text-align: center;
   display: grid;
   background-color: #89ff9c;
-  border-radius: 30px;
-  overflow: hidden;
+  border-radius: 12px;
+  left: 12px;
+  position: absolute;
+  top: 10px;
+  /* right: -20px; */
+  z-index: 20;
 }
-.alert .btn-close {
+
+.alert .btn-close,.close-gagal i{
+  color: #fff;
+  font-size: 18px;
   background-color: #00985b;
-  padding: 10px;
-  margin-right: 15px;
+  padding: 6px;
   border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  bottom: -20px;
+  text-decoration: none;
+  /* overflow: hidden; */
 }
-.alert-gagal {
+
+/* .alert-gagal {
   text-align: center;
   display: grid;
   background-color: #b80000;
   border-radius: 30px;
   overflow: hidden;
   color: #000000;
-}
-.alert .close-gagal {
+} */
+/* .alert .close-gagal {
   background-color: #f3b95f;
   padding: 10px;
   margin-right: 15px;
   border-radius: 10px;
-}
+} */
 
 .toggle-container {
   position: absolute;
@@ -287,11 +303,18 @@ body {
   overflow: hidden;
   transition: all 0.6s ease-in-out;
   border-radius: 150px 0 0 100px;
-  z-index: 1000;
+  z-index: 20;
+}
+.toggle-container.active .toggle .toggle-left h1{
+  width: 380px;
+}
+.toggle-container.active .toggle .toggle-right h1{
+  width: 380px;
 }
 .container.active .toggle-container {
   transform: translateX(-100%);
   border-radius: 0 150px 100px 0;
+
 }
 .toggle {
   background-color: blue;
