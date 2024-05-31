@@ -100,9 +100,7 @@ h6,
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
+/* # Back to top button */
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -133,9 +131,7 @@ h6,
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
+/* # Disable aos animation delay on mobile devices */
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -185,9 +181,7 @@ section {
   left: calc(50% - 30px);
 }
 
-/*--------------------------------------------------------------
-  # Contact Us
-  --------------------------------------------------------------*/
+/* # Contact Us */
 .contact .info {
   border-top: 3px solid #11e972;
   border-bottom: 3px solid #11e972;
@@ -337,9 +331,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
+/* # Footer */
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
